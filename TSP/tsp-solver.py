@@ -52,7 +52,7 @@ def solve_it(nrows, ncols, rows):
     row_series = []
     interesting_rows = xrange(nrows)
     for col_idx in xrange(ncols):
-        answer_sum = None; answer_row = None
+        answer_sum = answer_row = None
         for row_idx in interesting_rows:
             if answer_sum is None or helper[row_idx, col_idx] < answer_sum:
                 answer_sum = helper[row_idx, col_idx]
